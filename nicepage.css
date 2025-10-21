@@ -46219,11 +46219,11 @@ a.u-link.u-text-hover-color-var:hover {
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
-    min-height: 108px;
+    min-height: 87px;
   }
 
   .u-footer .u-icon-1 {
-    margin-top: 22px;
+    margin-top: 1px;
     margin-left: 69px;
   }
 
