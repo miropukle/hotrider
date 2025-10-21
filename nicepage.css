@@ -46219,17 +46219,17 @@ a.u-link.u-text-hover-color-var:hover {
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
-    min-height: 87px;
+    min-height: 96px;
   }
 
   .u-footer .u-icon-1 {
-    margin-top: 1px;
+    margin-top: 16px;
     margin-left: 69px;
   }
 
   .u-footer .u-text-1 {
     width: auto;
-    margin: -43px 69px 43px 133px;
+    margin: -43px 69px 37px 133px;
   }
 }
 
