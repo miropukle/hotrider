@@ -54,6 +54,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
+  animation-timing-function: ease;
   margin: 11px 0 0;
 }
 
@@ -160,7 +161,7 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 952px;
+    min-height: 953px;
   }
 
   .u-section-1 .u-text-1 {
@@ -172,6 +173,7 @@
   }
 
   .u-section-1 .u-text-2 {
+    width: auto;
     margin-top: 14px;
   }
 
