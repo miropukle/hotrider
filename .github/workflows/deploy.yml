@@ -1,0 +1,24 @@
+name: Deploy to Brainy via FTP
+
+on:
+  push:
+    branches:
+      - main   # или master — какая у тебя? поменяй если нужно
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./    # если сайт находится в корне репозитория
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
