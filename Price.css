@@ -132,7 +132,7 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 260px;
+    min-height: 1289px;
   }
 
   .u-section-1 .u-text-1 {
@@ -144,12 +144,29 @@
   }
 
   .u-section-1 .u-list-1 {
-    width: 340px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
   }
 
   .u-section-1 .u-repeater-1 {
     grid-auto-columns: calc(100% - 0px);
     grid-template-columns: 100%;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-text-5 {
+    width: auto;
+    margin-right: auto;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 694px;
