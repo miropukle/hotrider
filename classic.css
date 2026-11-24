@@ -1,0 +1,68 @@
+.hr-film,.hr-formats{background:#191919;color:#fff;padding:clamp(44px,6vw,86px) max(6vw,calc((100vw - 1120px)/2));font-family:Arial,sans-serif}.hr-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);align-items:center;gap:8%;max-width:1040px;margin:auto}.hr-film video{display:block;max-height:70vh;max-width:100%;aspect-ratio:9/16;margin:auto;background:#111}.hr-copy h2{font-size:clamp(44px,6vw,86px);letter-spacing:-.05em;line-height:1}.hr-copy>p:not(.hr-label){font-size:clamp(20px,2.3vw,31px);line-height:1.4}.hr-label{color:#ff994c;font-weight:700}.hr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.hr-grid a{color:white;border-top:2px solid #de823e;padding:17px 0}.hr-grid b,.hr-grid span{display:block}.hr-grid b{font-size:28px}.hr-grid span{margin-top:6px;color:#ddd}.u-section-3 .u-gallery .u-back-image{object-fit:contain!important;background:#171717}.u-section-3 .u-over-slide{background:none!important}.u-section-1 .u-sheet-1{display:flex!important;flex-direction:column;align-items:center;justify-content:space-between;gap:60px;padding-top:72px;padding-bottom:65px;min-height:clamp(480px,78svh,800px)!important}.u-section-1 .u-text-1,.u-section-1 .u-text-2{margin:0 auto!important}.u-section-1 .u-text-2{max-width:720px}.u-section-2 .u-image-1{background-position:48% 36%}.u-section-2 .u-image-2{background-position:55% 35%}@media(max-width:700px){.hr-inner,.hr-grid{grid-template-columns:1fr}.hr-film video{margin:24px auto 0;max-height:65vh}.hr-grid{gap:10px}}@media(prefers-reduced-motion:reduce){[data-animation-name]{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* Fade the original background images into the black video section. */
+.u-section-1 {
+ background-image:linear-gradient(0deg,#000 0%,rgba(0,0,0,.58) 22%,rgba(0,0,0,.45) 75%,rgba(0,0,0,.55)),url("images/pexels-amorie-sam-468180864-30692471.jpg");
+}
+.hr-film {background:#000;}
+.u-section-2 {
+ background-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.86) 12%,rgba(0,0,0,.5) 40%),url("images/pexels-maorattias-5175347.jpg");
+}
+.hr-copy {
+ --animation-custom_in-translate_x:-200px;
+ --animation-custom_in-translate_y:0px;
+ --animation-custom_in-opacity:0;
+ --animation-custom_in-rotate:0deg;
+ --animation-custom_in-scale:1;
+}
+.brand-dot{color:#ff8732}
+.u-section-2 .u-text-1{font-weight:700;letter-spacing:-.04em;font-size:clamp(40px,5vw,64px)}
+@media(max-width:575px){
+ .u-section-1 .u-sheet-1{padding-top:48px;padding-bottom:48px;min-height:560px!important}
+ .u-section-1 .u-text-1{font-size:clamp(38px,10vw,52px);line-height:1.08;max-width:340px}
+ .u-section-1 .u-text-2{font-size:18px;line-height:1.5}
+}
+
+/* Clearfix pseudo-elements must not occupy rows in the hero flex layout. */
+.u-section-1 .u-sheet-1::before,
+.u-section-1 .u-sheet-1::after {display:none}
+.u-section-1 .u-sheet-1 {padding-top:20px;padding-bottom:60px}
+body .hr-link,body .hr-link:visited {display:inline-block;color:#ff8732!important;border-bottom:1px solid currentColor}
+body .hr-link:hover {color:#ffac67!important}
+.u-section-2 {background-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.82) 12%,rgba(0,0,0,.5) 40%,rgba(0,0,0,.5) 70%,#000 100%),url("images/pexels-maorattias-5175347.jpg")}
+.u-section-3 {background:#000;color:#fff}
+@media(max-width:575px){
+ .u-section-1 .u-sheet-1 {padding-top:20px;padding-bottom:20px}
+}
+@media(min-width:1200px){
+ .u-section-1 .u-text-2{max-width:none;width:100%;white-space:nowrap;font-size:clamp(18px,1.55vw,22px)}
+}
+@media(min-width:1000px){.hr-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:701px) and (max-width:999px){.hr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Compact home header with proportional logo and vertically centred navigation. */
+#header > .u-sheet-1 {
+ display:flex;
+ flex-direction:row;
+ align-items:center;
+ justify-content:space-between;
+ min-height:76px;
+ padding:10px 12px;
+ gap:20px;
+}
+#header > .u-sheet-1::before,
+#header > .u-sheet-1::after {display:none}
+#header .u-image-1 {
+ order:-1;
+ flex-shrink:0;
+ width:160px;
+ height:auto;
+ margin:0;
+}
+#header .u-menu-1 {margin:0}
+@media(max-width:575px){
+ #header > .u-sheet-1 {min-height:64px;padding:10px 12px}
+ #header .u-image-1 {width:112px}
+ #header .u-hamburger-link {min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+}
